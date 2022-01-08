@@ -1,0 +1,5 @@
+docker build -t vlrags/defichat:1.2.0 .
+
+docker run –-name=defichat --rm -p 8080:8080 vlrags/defichat
+
+

@@ -1,0 +1,17 @@
+docker build -t vlrags/defi-front .
+
+
+docker run -it -p 3000:3000 vlrags/defichatfrontend
+docker run -it -p 3000:3000 vlrags/defi-front
+
+
+Create Network:
+
+
+docker network create defichat-network
+docker run  –-name=defichat-front -it -p 3000:3000 --network=chat-net vlrags/defi-front
+docker run –-name=defichat --rm  --network=chatnet vlrags/defichat
+
+
+
+docker run –-name=defichat --rm  --network=defichat-network -p 8080:8080 vlrags/defichat

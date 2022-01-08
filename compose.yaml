@@ -1,0 +1,36 @@
+version: '3.6'
+services:
+  react:
+    build: ./app
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      REACT_APP_TARGET_HOST: 127.0.0.1
+      REACT_APP_TARGET_PORT: 8000
+      REACT_APP_SPAM_SECONDS: 3
+      REACT_APP_CHAT_HISTORY: 100
+    networks:
+      backend:
+        ipv4_address: 172.31.0.2
+  pythonapp:
+    build: ./Docker
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      CHAT_HISTORY: 100
+      BACKEND_LISTEN_IP: 0.0.0.0
+      BACKEND_LISTEN_PORT: 8000
+    networks:
+      backend: 
+        ipv4_address: 172.31.0.4
+networks:
+  backend:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.31.0.0/24
+    driver_opts:
+      com.docker.network.bridge.enable_icc: 'true'

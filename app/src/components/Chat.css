@@ -1,0 +1,145 @@
+
+.rcw-conversation-container>.rcw-header {
+    background-color: rgba(53,63,114,255);
+    border-radius: 5px 5px 0 0;
+    color: #fff;
+    display: -ms-flexbox;
+    display: none;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0 10px;
+}
+
+.rcw-messages-container {
+    background-color: rgba(228,231,236,255);
+    height: 800px;
+    max-height: 94%;
+    overflow-y: scroll;
+    padding-top: 10px;
+    -webkit-overflow-scrolling: touch
+}
+
+.rcw-launcher {
+    -webkit-animation-delay: 0;
+    -webkit-animation-duration: .5s;
+    -webkit-animation-name: d;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-delay: 0;
+    -moz-animation-duration: .5s;
+    -moz-animation-name: d;
+    -moz-animation-fill-mode: forwards;
+    animation-delay: 0;
+    animation-duration: .5s;
+    animation-name: d;
+    animation-fill-mode: forwards;
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    background-color:rgba(53,63,114,255);
+    border: 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px 1px #b5b5b5;
+    height: 60px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 60px
+}
+
+
+
+.rcw-client .rcw-message-text {
+    background-color: rgba(113,123,185,255);
+    text-align: left;
+    max-width: 300px;
+    
+}
+
+.rcw-response .rcw-message-text {
+    background-color: #f4f7f9;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 300px;
+    text-align: right;
+}
+
+
+.rcw-client {
+    
+    margin-left: 0
+}
+
+
+
+.rcw-client .rcw-timestamp {
+    font-size: 10px;
+    margin-top: 5px;
+    align-self: 0
+}
+
+.rcw-send {
+    
+    border: solid;
+    border-color: rgba(104,81,171,255);
+    background-color: rgba(104,81,171,255);
+    border-radius: 10px;
+
+    
+}
+
+
+.rcw-client .rcw-timestamp{
+    align-self:flex-start;
+}
+
+
+.rcw-full-screen {
+    height: 200vh;
+}
+
+.rcw-timestamp {
+font-size: 12px;
+}
+
+
+/* CSS */
+.button-66 {
+  background-color: #5a6068;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: rgba(1,60,136,.5) 0 -1px 3px 0 inset,rgba(0,44,97,.1) 0 3px 6px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  
+  font-family: "Space Grotesk",-apple-system,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0;
+  min-height: 56px;
+  min-width: 120px;
+  padding: 16px 20px;
+  position: relative;
+  text-align: center;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  transition: all .2s cubic-bezier(.22, .61, .36, 1);
+}
+.button-66:hover{
+    filter: brightness(85%)
+}
+.button-66:focus-{
+
+    background-color: rgba(53,63,114,255);
+}
+
+
+
+@media (min-width: 768px) {
+  .button-66 {
+    padding: 16px 44px;
+    min-width: 150px;
+  }
+}
